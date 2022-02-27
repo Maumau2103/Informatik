@@ -10,7 +10,7 @@ Den Nachweis, dass keine Fehler mehr vorhanden sind, kann das Softwaretesten all
 
 ## Welche Vorteile hat das Testen?
 In großen Software Unternehmen ist das umfangreiche Testen von neuen Anwendungen Gang und Gäbe. Jetzt da wir wissen, was Softwaretests sind, schauen wir uns einige Vorteile an, die das Testen zu bieten hat und warum es in vielen Projekten eingesetzt wird.
-**Software Testing spart Zeit und Geld
+**Software Testing spart Zeit und Geld**
 Die Softwareentwicklung besteht normalerweise aus vielen Phasen, egal ob man einen statischen Projektplan hat oder ein agiles Projekt mit vielen Sprints und wenn Fehler in den frühen Phasen entdeckt werden, ist es meist günstiger, diese zu beheben, als wenn der Fehler erst später entdeckt wird. Im schlimmsten Fall muss dann nämlich der ganze Code nochmal durchsucht und umgeschrieben werden, um den Fehler zu beheben.
 **Mehr Sicherheit**
 In der Vergangenheit gab es viele Situationen, in denen Benutzerinformationen gestohlen wurden oder Hacker sie gefunden und zu ihrem Vorteil genutzt haben. Durch Security-Testing erhält der Nutzer ein vertrauenswürdiges Produkt, da solche Probleme und Risiken bereits im Vorfeld erkannt und noch während der Entwicklung beseitigt werden.
