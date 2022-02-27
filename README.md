@@ -63,7 +63,9 @@ Aus diesen drei Anforderungen leiten wir als Tester nun drei Testfälle, also Be
 
 Der White Box Test hingegen basiert auf dem Wissen über die interne Logik des Codes einer Anwendung. Um White Box Tests für eine Anwendung durchführen zu können, muss ein Tester die interne Funktionsweise des Codes kennen. Anhand des Codes werden dann verschiedene Testfälle abgeleitet.
 
-Als Beispiel gucken wir uns den nebenstehenden Pseudo-Code an, bestehend aus drei if-Schleifen und drei Funktionen, die aufgerufen werden können. Diesen Pseudo-Code können wir in einen Kontrollflussgraphen (rechts im Bild) umwandeln. Jede Raute repräsentiert dabei eine if-Schleife, die das Programm jeweils in zwei verschiedene Verläufe aufteilt (if-Bedingung erfüllt und if-Bedingung nicht erfüllt). Jedes Rechteck repräsentiert eine Funktion, die aufgerufen wird. 
+![](./white-box.jpg) 
+
+Als Beispiel gucken wir uns den obenstehenden Pseudo-Code an, bestehend aus drei if-Schleifen und drei Funktionen, die aufgerufen werden können. Diesen Pseudo-Code können wir in einen Kontrollflussgraphen (rechts im Bild) umwandeln. Jede Raute repräsentiert dabei eine if-Schleife, die das Programm jeweils in zwei verschiedene Verläufe aufteilt (if-Bedingung erfüllt und if-Bedingung nicht erfüllt). Jedes Rechteck repräsentiert eine Funktion, die aufgerufen wird. 
 Aus diesem Kontrollflussgraphen leiten wir als Tester nun unsere Testfälle, also jeweils Zahlen für a,b und c, ab. Das machen wir, indem wir uns für jeden möglichen Pfad durch den Kontrollflussgraphen einen Testfall überlegen. In unserem Beispiel wären das vier Pfade, also vier Testfälle:
 1. c1 --> m3()
 2. c1 --> c2 --> m1() --> m3()
@@ -73,7 +75,7 @@ Aus diesem Kontrollflussgraphen leiten wir als Tester nun unsere Testfälle, als
 ### Teststufen
 Als Nächstes betrachten wir verschiedene Teststufen, die während eines Softwareprojekts durchlaufen werden.
 
-
+![](./Teststufen.png)
 
 Oben in der Abbildung seht ihr, wie so ein Softwareprojekt ungefähr aussehen könnte. Man fängt an mit einer Systemanforderungsanalyse, in der man alle Anforderungen an die Anwendung ableitet und geht dann immer detaillierter rein. Man entwirft die System-Architektur, den System-Entwurf, Software-Architektur bis man dann einen Software Entwurf hat. Danach fängt man an kleine Sachen zu testen, die Tests werden dann aber immer umfassender.
 
@@ -103,6 +105,8 @@ Unsere Funktion „add“ soll zwei ganzzahlige Zahlen zusammenaddieren und das 
 **2. Schreibe einen Testfall, der dieses Verhalten erzeugt**
 
 In unserem Testskript überprüfen wir jetzt unser gewünschtes Verhalten, indem wir zwei Zahlen an unsere Funktion „add“ übergeben und den Rückgabewert mit unserem erwarteten Ergebnis vergleichen. Im folgenden Bild sieht man, wie das aussehen könnte. Hier hab ich das ganze mithilfe von JUnit erstellt, einem Test-Framework für Unit-Tests in Java Programmen. 
+
+![](./tdd4.png) 
 
 Zunächst wird ein Calculator Objekt erstellt. Dann wird die Funktion „add“ mit den Werten 2 und 3 aufgerufen. Der Rückgabewert dieses Funktionsaufrufes wird dann mit unserem erwarteten Ergebnis 5 verglichen. Ist der Rückgabewert gleich 5, gibt der Test den Wert true zurück, ist er nicht gleich 5, gibt der Test den Wert false zurück.
 
