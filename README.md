@@ -1,10 +1,13 @@
 #Sollte ich als Informatiker mit Tests arbeiten?
+
 Hallo, mein Name ist Mauricio Soltmann, ich bin 20 Jahre alt und studiere Informatik im fünften Bachelor Semester an der Otto-von-Guericke Universität Magdeburg. Im Rahmen des Kurses "Effiziente Programmierung und Ein-/Ausgabe" habe ich die Aufgabe bekommen mich im Laufe des Semesters mit dem Thema Tests auseinanderzusetzen und einen Vortrag darüber zu halten. Während meiner Recherche kam mir relativ früh die Frage in den Sinn, ob es sinnvoll ist, auch als Informatikstudent, Softwaretests in meine Programme einzubinden, auch wenn es nicht explizit verlangt wird. 
 In den folgenden Abschnitten will ich euch meine Erkenntnisse zu Softwaretests näher bringen und zum Schluss zu einer gut durchdachten und logischen Antwort zur Frage "Sollte ich als Informatiker mit Tests arbeiten?" kommen.
+
 ##Was sind Softwaretests überhaupt?
 Bevor wir tiefer in die Thematik einsteigen, will ich euch erstmal erklären, was Tests überhaupt sind. 
 Tests prüfen und bewerten Software auf die Erfüllung der für ihren Einsatz definierten Anforderungen und missen ihre Qualität. Die gewonnenen Erkenntnisse werden zur Erkennung und Behebung von Softwarefehlern genutzt. Tests während der Softwareentwicklung dienen dazu, die Software möglichst fehlerfrei in Betrieb zu nehmen. 
 Den Nachweis, dass keine Fehler mehr vorhanden sind, kann das Softwaretesten allerdings nicht erbringen. Das liegt daran, dass dafür alle Programmfunktionen und auch alle möglichen Werte in den Eingabedaten in allen ihren Kombinationen getestet werden müssten, was außer bei sehr einfachen Testobjekten praktisch nicht möglich ist. Deshalb ist das Ziel von Softwaretests mit einer möglichst geringen Anzahl von Testfällen eine möglichst große Testabdeckung zu erreichen.
+
 ##Welche Vorteile hat das Testen?
 In großen Software Unternehmen ist das umfangreiche Testen von neuen Anwendungen Gang und Gäbe. Jetzt da wir wissen, was Softwaretests sind, schauen wir uns einige Vorteile an, die das Testen zu bieten hat und warum es in vielen Projekten eingesetzt wird.
 **Software Testing spart Zeit und Geld**
@@ -15,6 +18,7 @@ In der Vergangenheit gab es viele Situationen, in denen Benutzerinformationen ge
 Wenn eine Anwendung aktualisiert und um neue Funktionen erweitert werden soll, kann es schnell zu neuen Fehlern oder Bugs führen. Hat man jedoch ein umfassendes Test-Framework benutzt beim Entwickeln, findet man schnell heraus worin der Fehler liegt und kann ihn beheben.
 **Höhere Kundenzufriedenheit**
 Außerdem ist eine höhere Kundenzufriedenheit bei der Entwicklung einer Anwendung sehr wichtig. Mithilfe von Tests kann die Konsistenz von Anforderungen über den gesamten Produktlebenszyklus hinweg sichergestellt werden und man kann seinen Kunden die Funktionalität von verschiedenen Funktionen vorführen (vorallem mit Black Box Tests) bevor die Anwendung fertig entwickelt wurde, was zusätzlich das Vertrauen des Kunden stärkt.
+
 ##Manuelles Testing vs. Automatisiertes Testing
 Als nächstes erkläre ich euch den Unterschied zwischen dem manuellen und dem automatisiertem Testen und vergleiche beide Ansätze.
 Manuelle Tests werden von einem Menschen durchgeführt, der sich durch die Anwendung klickt oder mit der Software und APIs und entsprechenden Tools interagiert. Sie können durchgeführt werden, um Fehler während der Softwareentwicklung zu entdecken, aber auch um Feedback über die Benutzerfreundlichkeit und Vorschläge, wie die Anwendung verbessert werden könnte zu erhalten. Der Tester folgt dann einem mehr oder weniger strikten Ansatz, um jede Funktion des Systems zu verifizieren/testen. Nach der Ausführung der Testfälle verfasst er dann einen Testbericht.
@@ -24,13 +28,12 @@ Manuelles Testing	Automatisiertes Testing
 zeitaufwändiger, benötigt menschliche Ressourcen für jeden Schritt	deutlich schneller, erfordert außer der anfänglichen Skriptkodierung keine Ressourcen
 Code ist besser nachvollziehbar (da sich der Tester mehr mit dem Code beschäftigt)	keine zufälligen oder explorativen Tests möglich
 menschliche Fehler, vorallem bei sich wiederholenden Aufgaben	zuverlässiger, da es menschliche Fehler vermeidet
-Änderungen können leichter eingearbeitet werden	jede Änderung im Skript muss codiert werden
-	spart langfristig viel Zeit und Budget in großen Software-Projekten
-
+Änderungen können leichter eingearbeitet werden	jede Änderung im Skript muss codiert werden spart langfristig viel Zeit und Budget in großen Software-Projekten
 Wie ihr seht haben beide Ansätze ihre Vor- und Nachteile. Abschließend kann man jedoch sagen, dass automatisiertes Testen in großen Softwareprojekten langfristig viel Zeit und Geld spart und daher häufiger verwendet wird. Außerdem behält man immer einen guten Überblick über die gesamte Anwendung und bemerkt sofort, wann und wo ein Fehler auftritt. Handelt es sich jedoch um eine kleine Anwendung oder es kommt zu häufigen Änderungen von Funktionen, kann manuelles Testen effizienter sein.
-Black Box und White Box Testing
+
+##Black Box und White Box Testing##
 Nun schauen wir uns zwei weitere Ansätze an, nach denen man Tests unterscheidet, nämlich nach Black Box und White Box Tests.
-##Black Box Test
+**Black Box Test**
 Black Box Tests sind Tests, bei denen das interne Systemdesign nicht berücksichtigt wird und für den Tester unbekannt bleibt. Typischerweise interagiert ein Tester während der Durchführung eines Black Box Tests mit der Benutzeroberfläche des Systems oder einer anderen Schnittstelle, indem er Eingaben bereitstellt und Ausgaben untersucht. Dabei weiss er nicht wie und wo die Eingaben bearbeitet werden. Anhand der Anforderungen werden verschiedene Testfälle abgeleitet.
 Um das Ganze zu veranschaulichen stellen wir uns eine Anwendung mit einer Login-Funktion vor (siehe rechts). Unsere Aufgabe als Tester ist es nun folgende Anforderungen an das Login-Fenster zu testen:
 1. bei richtigem Benutzernamen und Passwort soll der Nutzer eingeloggt werden
