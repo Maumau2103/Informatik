@@ -50,7 +50,9 @@ Nun schauen wir uns zwei weitere Ansätze an, nach denen man Tests unterscheidet
 
 Black Box Tests sind Tests, bei denen das interne Systemdesign nicht berücksichtigt wird und für den Tester unbekannt bleibt. Typischerweise interagiert ein Tester während der Durchführung eines Black Box Tests mit der Benutzeroberfläche des Systems oder einer anderen Schnittstelle, indem er Eingaben bereitstellt und Ausgaben untersucht. Dabei weiss er nicht wie und wo die Eingaben bearbeitet werden. Anhand der Anforderungen werden verschiedene Testfälle abgeleitet.
 
-Um das Ganze zu veranschaulichen stellen wir uns eine Anwendung mit einer Login-Funktion vor (siehe rechts). Unsere Aufgabe als Tester ist es nun folgende Anforderungen an das Login-Fenster zu testen:
+![](https://syncomnetwork.de/wp-content/uploads/2018/03/Wordpress_Loging_Remote.png) 
+
+Um das Ganze zu veranschaulichen stellen wir uns eine Anwendung mit einer Login-Funktion vor (siehe oben). Unsere Aufgabe als Tester ist es nun folgende Anforderungen an das Login-Fenster zu testen:
 1. bei richtigem Benutzernamen und Passwort soll der Nutzer eingeloggt werden
 2. bei richtigem Benutzernamen und falschem Passwort soll die Meldung „falsches Passwort“ erscheinen
 3. bei falschem Benutzernamen soll die Meldung „Benutzername existiert nicht“
@@ -69,7 +71,10 @@ Aus diesem Kontrollflussgraphen leiten wir als Tester nun unsere Testfälle, als
 4. c1 --> c2 --> c3 --> m3()
 
 ### Teststufen
-Als Nächstes betrachten wir verschiedene Teststufen, die während eines Softwareprojekts durchlaufen werden. 
+Als Nächstes betrachten wir verschiedene Teststufen, die während eines Softwareprojekts durchlaufen werden.
+
+
+
 Oben in der Abbildung seht ihr, wie so ein Softwareprojekt ungefähr aussehen könnte. Man fängt an mit einer Systemanforderungsanalyse, in der man alle Anforderungen an die Anwendung ableitet und geht dann immer detaillierter rein. Man entwirft die System-Architektur, den System-Entwurf, Software-Architektur bis man dann einen Software Entwurf hat. Danach fängt man an kleine Sachen zu testen, die Tests werden dann aber immer umfassender.
 
 **Unit-Test**
