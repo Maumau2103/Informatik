@@ -50,7 +50,7 @@ Nun schauen wir uns zwei weitere Ansätze an, nach denen man Tests unterscheidet
 
 Black Box Tests sind Tests, bei denen das interne Systemdesign nicht berücksichtigt wird und für den Tester unbekannt bleibt. Typischerweise interagiert ein Tester während der Durchführung eines Black Box Tests mit der Benutzeroberfläche des Systems oder einer anderen Schnittstelle, indem er Eingaben bereitstellt und Ausgaben untersucht. Dabei weiss er nicht wie und wo die Eingaben bearbeitet werden. Anhand der Anforderungen werden verschiedene Testfälle abgeleitet.
 
-![](https://syncomnetwork.de/wp-content/uploads/2018/03/Wordpress_Loging_Remote.png) 
+![](./Login.png) 
 
 Um das Ganze zu veranschaulichen stellen wir uns eine Anwendung mit einer Login-Funktion vor (siehe oben). Unsere Aufgabe als Tester ist es nun folgende Anforderungen an das Login-Fenster zu testen:
 1. bei richtigem Benutzernamen und Passwort soll der Nutzer eingeloggt werden
